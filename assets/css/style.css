@@ -1,0 +1,851 @@
+/*--------------------------------------------------------------
+# Your style css : Justin Pescador
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Global Settings
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Agustina';
+  src: url('/assets/fonts/Agustina.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/assets/fonts/DancingScript-Medium.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gradientText {
+  background-image: linear-gradient(15deg, cyan , red);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradientTextTitle {
+  background-image: linear-gradient(45deg, #FF0044, #FF006E, purple);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.beforeText,
+.beforeTextSkills,
+.beforeTextProject,
+.beforeTextBlogs,
+.beforeTextContact {
+  font-size: 13px;
+  padding: 2px 0 2px 0;
+  letter-spacing: 0.08em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid gray;
+  color: white;
+  padding-bottom: -20px;
+  justify-content: center;
+  text-align: center;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+}
+
+.beforeTextSkills,
+.beforeTextProject,
+.beforeTextBlogs,
+.beforeTextContact {
+  width: 15%;
+}
+
+body {
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  background-color: black;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+ 
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/* Error */
+.error-msg{
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+/*  navbar session*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+    transition: all 0.3s ease;
+    color: black;
+}
+ 
+#background{
+    margin-left: 20px;
+}
+
+#background:hover{
+    cursor: pointer;
+}
+
+.navbar.sticky {
+    background: none;
+    padding: 10px 0;
+}
+ 
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 100;
+    color: white;;
+}
+ 
+.navbar .logo a span {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a{
+    color: white;
+}
+ 
+.navbar.sticky .menu li a{
+    color: grey;
+}
+.navbar.sticky .logo a span {
+    color: white;
+}
+ 
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+ 
+.navbar .menu li a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.navbar .menu li a:hover {
+    color: grey;
+}
+
+.navbar.sticky .menu li a{
+    color: grey;
+}
+.navbar.sticky .menu li a:hover {
+    color: grey;
+}
+
+/* Frontend Dev Button */
+.frontend,
+.skills .serv-content .card,
+.skills .card,
+.project .card,
+.blogs .card {
+  --purple: #9B7EDA;
+  font-size: 13px;
+  padding: 0.8em 3em;
+  letter-spacing: 0.08em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--purple);
+  color: white;
+  padding-bottom: -20px;
+  justify-content: center;
+}
+
+/*  Home start  */
+.home{
+    display: flex;
+    background: url(/assets/images/background.png) no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-size: 1250px;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+ 
+.home .home-content .text-1 {
+    font-size: 27px;
+    color: white;
+}
+ 
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+ 
+.home .home-content .text-3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+ 
+.contactMe {
+    display: inline-block;
+    background: #7289da;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid #7289da;
+    margin-right: 20px;
+}
+ 
+.contactMe:hover {
+    color: #7289da;
+    background: none;
+}
+
+.viewPortfolio {
+  display: inline-block;
+  background: #E25465;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 2px solid #E25465;
+}
+
+.viewPortfolio:hover {
+  color: #E25465;
+  background: none;
+}
+ 
+
+/*  Menu  Mobile  */
+.menu-btn {
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+ 
+.scroll-up {
+    position: fixed;
+    width: 41px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: none;
+    border-radius: 6px;
+    font-size: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-color: gray;
+}
+ 
+.scroll-up.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+ 
+}
+ 
+
+/*  all similar codes  */
+section {
+    padding: 100px 0;
+}
+ 
+section .title {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section .title::after {
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    padding: 52px;
+    transform: translateX(-50%);
+}
+ 
+.about,
+.skills,
+.project,
+.blogs,
+.contact,
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.about .about-content,
+.skills .serv-content,
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right a {
+  color: #191970;
+}
+ 
+
+/*  session about */
+ 
+.about .title::after {
+    top: 50%;
+    content: "My story in a nutshell:";
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+ 
+.about .about-content .left img{
+    width: 45%;
+    margin-left: 275px;
+}
+ 
+.about .about-content .right {
+    width: 55%;
+}
+ 
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 500;
+}
+ 
+.about .about-content .right p {
+    width: 80%;
+    text-align: justify;
+    font-size: 24px;
+    color: gray;
+}
+
+.about .left img {
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-color: purple;
+  border-width: 15px;
+  border-radius: 6px;
+}
+ 
+.about .about-content .left img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+/*  services session */
+.skills,
+.project,
+.blogs {
+    color: #000000;
+}
+ 
+.skills .title::before,
+.blogs .title::before {
+    background: #111;
+}
+ 
+.blogs .title::after{
+    top: 50%;
+    content: "Here are some of the technologies that are part of my current stack:";
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.skills .serv-content .card{
+    width: 22%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px 30px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: none;
+    margin-top: 20px;
+}
+ 
+.skills .serv-content .card:hover {
+    background: #9B7EDA;
+}
+ 
+.skills .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+ 
+.skills .serv-content .card ion-icon {
+    font-size: 70px;
+    color: #00804b;
+}
+ 
+.skills .serv-content .card:hover ion-icon {
+    color: #fff;
+}
+ 
+.skills .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 0 7px 0;
+}
+
+.skills .serv-content .card .text h3{
+font-weight: 450;
+font-size: 50;
+margin: -15px;
+justify-content: space-evenly;
+}
+ 
+
+/*  Team session  */
+.blogs .title::after {
+    top: 50%;
+    content: "From tech tips to gaming guides, there are some written pieces that you can check out if you're interested.";
+    width: 100%;
+}
+
+.projects .carousel .card .top{
+  display: inline-flex;
+}
+
+.projects .carousel .card .top-logo{
+  display: inline-flex;
+  width: 100%;
+}
+
+ 
+.blogs .carousel .card, 
+.skills .carousel .card,
+.project .carousel .card {
+    background: none;
+    border-radius: 10px;
+    border: #9B7EDA solid 2px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.blogs .carousel .card:hover,
+.project .carousel .card:hover {
+    background: #9B7EDA;
+}
+ 
+.blogs .carousel .card img,
+.project .carousel .card img {
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+ 
+.blogs .carousel .card:hover img {
+    border-color: #fff;
+}
+ 
+.blogs .carousel .card .box,
+.skills .carousel .card .box,
+.project .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+ 
+.blogs .carousel .card .text,
+.skills .carousel .card .text,
+.project .carousel .card .text{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 0 7px 0;
+}
+ 
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+ 
+.owl-dot {
+    width: 14px;
+    height: 14px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #00804b !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 15px;
+}
+ 
+.owl-dot.active,
+.owl-dot:hover {
+    background: #00804b !important;
+}
+ 
+
+/* Contact session  */
+.contact .title::after {
+    content: "Interested in working together? We should schedule a time to change. I'll bring the coffee.";
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    top: 50%;
+}
+
+.contact .right form {
+  border: 2px solid #9B7EDA;
+  padding: 50px 50px 75px 50px;
+}
+ 
+.contact .right form .fields {
+    display: flex;
+}
+ 
+.contact .right form .field,
+.contact .right form .fields .field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+ 
+.contact .right form .field input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    background: none;
+}
+
+.contact .right form .textarea textarea {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid gray;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    border-radius: 7px;
+    background: none;
+}
+ 
+.contact .right form .name {
+    margin-right: 10px;
+}
+ 
+.contact .right form .email {
+    margin-left: 10px;
+}
+ 
+.contact .right form .textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+ 
+.contact .right form .button {
+    width: 170px;
+    height: 47px;
+}
+ 
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #9B7EDA;
+    background: #9B7EDA;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+ 
+.contact .right form .button button:hover {
+    color: #9B7EDA;
+    background: none;
+}
+ 
+
+/*  footer session  */
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+ 
+footer span a {
+    text-decoration: none;
+}
+ 
+footer span a:hover {
+    text-decoration: underline;
+}
+ 
+ 
+/*  responsivo  */
+@media (max-width: 1300px) {
+    .navbar .max-width {
+        margin-left: 0;
+    }
+}
+ 
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        width: 350px;
+        height: 350px;
+    }
+}
+ 
+@media (max-width: 991px) {
+    .navbar .max-width {
+        padding: 0 50px;
+    }
+}
+ 
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 800px;
+        padding: 0 50px;
+    }
+ 
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+ 
+    .navbar .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        background: #111;
+        padding-top: 80px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+ 
+    .navbar .menu.active {
+        left: 0;
+    }
+ 
+    .navbar .menu li {
+        display: block;
+    }
+ 
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+ 
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+ 
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+ 
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+ 
+    .about .about-content .column {
+        width: 50%;
+    }
+ 
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+ 
+    .about .about-content .right {
+        flex: 100%;
+    }
+ 
+    .skills .serv-content .card {
+        width: calc(50% - 10px);
+    }
+ 
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+ 
+    footer {
+        margin-top: 15px;
+    }
+}
+ 
+@media (max-width: 690px) {
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+ 
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+ 
+    .home .home-content a {
+        font-size: 20px;
+    }
+ 
+    .skills .serv-content .card {
+        width: 50%;
+    }
+}
+ 
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+ 
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
+
+.skillIcons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.logo {
+  font-family: Agustina;
+}
+
+.about .title,
+.skills .title,
+.blogs .title,
+.contact .title,
+.project .title{
+  font-family: Dancing Script;
+}
+
+.rainbow {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    z-index: 1;
+  }
+  
+.rainbow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .07em;
+    height: .1em;
+    width: 100%;
+    background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+    z-index: -1;
+    transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+.visit {
+  cursor: pointer;
+  display: inline-flex;
+  position: absolute;
+  font-size: 13px;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid purple;
+  color: white;
+  background: purple;
+  border-radius: 50px;
+  right: 10px;
+  bottom: 525px;
+}
+
+.inProgress {
+  display: inline-flex;
+  position: absolute;
+  font-size: 11px;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid gold;
+  color: #C26B03;
+  background: #0A0C10;
+  border-radius: 50px;
+  right: 10px;
+  bottom: 525px;
+}
+
+.readMore {
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+}
